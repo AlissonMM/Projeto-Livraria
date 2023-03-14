@@ -1,0 +1,33 @@
+<?php
+if($_POST['cxnome'] != "")
+{
+ include_once "conexao.php";
+ $nome = $_POST ['cxnome'];
+ $ano = $_POST ['cxano'];
+ $produtora = $_POST ['cxprodutora'];
+ $diretor = $_POST ['cxdiretor'];
+ $genero = $_POST ['cxgenero'];
+ $nota = $_POST ['cxnota'];
+
+ $query = "insert into tbfilmes(nome,ano,produtora,diretor,genero,nota) values('$nome','$ano','$produtora','$diretor','$genero','$nota')";
+
+ $sql = mysqli_query($conn, $query);
+
+ echo "
+ <script>
+ alert('Dados cadastrados com sucesso');
+ window.location.href='telacadpedido.php'
+ </script>
+ ";
+}
+else
+{
+ echo "
+ <script>
+ alert('Dados incompletos!');
+ window.location.href='telacadpedido.php'
+ </script>
+ ";
+
+}
+?>

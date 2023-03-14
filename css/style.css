@@ -1,0 +1,46 @@
+header{
+    background-color: rgb(41, 41, 41);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.caixa {
+    position: relative;
+    width: 70%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:flex-end;
+
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    
+}
+
+
+#nome{
+    color: #3385D9;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+main{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.titulo{
+    text-align: center;
+}
